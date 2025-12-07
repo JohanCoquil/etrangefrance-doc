@@ -74,8 +74,8 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/etrangefrance/EtrangeFrance',
-          label: 'GitHub',
+          href: 'https://api.scriptonautes.net',
+          label: 'Télécharger l\'application',
           position: 'right',
         },
       ],
