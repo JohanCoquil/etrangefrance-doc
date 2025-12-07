@@ -1,5 +1,5 @@
 const sidebars = {
-  tutorialSidebar: [
+  docSidebar: [
     'intro',
 
     {
