@@ -23,10 +23,26 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify documentation structure
+        run: |
+          echo "📚 Vérification de la structure de la documentation..."
+          echo "Fichiers dans docs/:"
+          ls -la docs/ | grep "\.md$" || echo "Aucun fichier .md trouvé"
+          echo ""
+          echo "Fichiers référencés dans sidebars.ts:"
+          grep -E "'[a-z-]+'" sidebars.ts || true
+
       - name: Build Docusaurus site
-        run: npm run build
+        run: npm run build 2>&1 | tee build.log
         env:
           NODE_ENV: production
+
+      - name: Display build errors (if failed)
+        if: failure()
+        run: |
+          echo "❌ Le build a échoué!"
+          echo "📋 Vérification des erreurs dans les logs:"
+          tail -100 build.log || echo "Impossible de lire les logs"
 
       - name: List build contents
         run: |

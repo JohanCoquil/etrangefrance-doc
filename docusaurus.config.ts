@@ -92,7 +92,7 @@ const config: Config = {
             },
             {
               label: 'Joueurs',
-              to: '/docs/joueurs',
+              to: '/docs/joueur',
             },
             {
               label: 'MJ',
