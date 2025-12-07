@@ -66,6 +66,7 @@ jobs:
             **/node_modules/**
             **/.DS_Store
           dangerous-clean-slate: false
+          delete-removed: true
           log-level: verbose
 
       - name: Deployment complete
