@@ -91,12 +91,12 @@ const config: Config = {
               to: '/docs/intro',
             },
             {
-              label: 'Installation',
-              to: '/docs/installation',
+              label: 'Joueurs',
+              to: '/docs/joueurs',
             },
             {
-              label: 'Architecture',
-              to: '/docs/architecture',
+              label: 'MJ',
+              to: '/docs/mj',
             },
           ],
         },
@@ -104,11 +104,12 @@ const config: Config = {
           title: 'Projet',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/etrangefrance/EtrangeFrance',
+              label: 'Site officiel de l\'application',
+              href: 'https://api.scriptonautes.net',
             },
+
             {
-              label: 'Site officiel',
+              label: 'Site officiel du JdR papier',
               href: 'https://www.etrange-france.fr',
             },
           ],

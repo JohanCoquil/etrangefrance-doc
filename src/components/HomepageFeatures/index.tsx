@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -7,6 +8,7 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  link?: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -19,6 +21,7 @@ const FeatureList: FeatureItem[] = [
         de jeu en ligne ou en présentiel avec tous les outils nécessaires.
       </>
     ),
+    link: '/docs/joueur',
   },
   {
     title: 'Pour les Maîtres de Jeu',
@@ -29,6 +32,7 @@ const FeatureList: FeatureItem[] = [
         tous les outils dédiés pour une expérience de jeu optimale.
       </>
     ),
+    link: '/docs/mj',
   },
   {
     title: 'Temps Réel',
@@ -39,12 +43,13 @@ const FeatureList: FeatureItem[] = [
         présence en temps réel pour une immersion totale.
       </>
     ),
+    link: '/docs/intro',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
-  return (
-    <div className={clsx('col col--4')}>
+function Feature({title, Svg, description, link}: FeatureItem) {
+  const content = (
+    <>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -52,6 +57,18 @@ function Feature({title, Svg, description}: FeatureItem) {
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
+    </>
+  );
+
+  return (
+    <div className={clsx('col col--4')}>
+      {link ? (
+        <Link to={link} className={styles.featureLink}>
+          {content}
+        </Link>
+      ) : (
+        content
+      )}
     </div>
   );
 }

@@ -1,0 +1,59 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Permet de déclencher manuellement depuis GitHub
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Docusaurus site
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: List build contents
+        run: |
+          echo "📦 Contenu du dossier build:"
+          ls -la build/ || echo "⚠️ Le dossier build n'existe pas!"
+          echo ""
+          echo "📊 Taille du build:"
+          du -sh build/ || echo "⚠️ Impossible de calculer la taille"
+
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build/
+          server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
+          dangerous-clean-slate: false
+          log-level: verbose
+
+      - name: Deployment complete
+        run: |
+          echo "✅ Site déployé avec succès!"
+          echo "🌐 Votre documentation est maintenant disponible en ligne"
+

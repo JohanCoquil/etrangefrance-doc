@@ -34,18 +34,28 @@ La documentation est organisée dans le dossier `docs/` :
 
 ## 🌐 Déploiement
 
-Pour déployer la documentation :
+### Déploiement automatique (recommandé)
+
+La documentation est déployée automatiquement via GitHub Actions lorsque vous mergez une Pull Request vers `main`.
+
+Consultez le guide complet : [Guide de déploiement](.github/DEPLOYMENT.md)
+
+**Configuration requise** : Configurez les secrets GitHub (FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_REMOTE_DIR)
+
+### Déploiement manuel
+
+Pour déployer manuellement la documentation :
 
 1. Build le site : `npm run build`
-2. Déployez le contenu du dossier `build/` sur votre hébergeur
+2. Déployez le contenu du dossier `build/` sur votre hébergeur via FTP
 
-### Déploiement GitHub Pages
+### Déploiement GitHub Pages (alternative)
 
 ```bash
 npm run deploy
 ```
 
-Cette commande build le site et le déploie sur GitHub Pages.
+Cette commande build le site et le déploie sur GitHub Pages (nécessite une configuration spécifique).
 
 ## 📖 En savoir plus
 

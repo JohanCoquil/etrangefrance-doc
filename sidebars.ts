@@ -28,6 +28,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Pour les Joueurs',
       items: [
+        'joueur',
         'rejoindre-partie',
         'utiliser-personnage',
         'partie-en-cours',
@@ -38,6 +39,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Pour les Maîtres de Jeu',
       items: [
+        'mj',
         'creer-partie',
         'gerer-sessions',
         'animer-session',
