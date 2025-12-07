@@ -1,23 +1,56 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
+.asciiTitle {
+  font-family: "Courier New", monospace;
+  font-size: 9.5px;
+  white-space: pre;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 11px;
+
+  /* Ambre Minitel */
+  color: #ffbf66;
+  text-shadow:
+    0 0 4px #ffac33,
+    0 0 7px #cc7a00,
+    0 0 14px rgba(255, 180, 90, 0.4);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.subtitle {
+  text-align: center;
+  margin-top: 0;
+  color: #ffe9cc;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.quickLinks {
+  padding: 40px 0;
+  background: #1a1a1a;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  color: #eee;
+  text-decoration: none;
+  border: 1px solid #333;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  background: #333;
+  border-color: #ffbf66;
+  transform: translateY(-3px);
 }
