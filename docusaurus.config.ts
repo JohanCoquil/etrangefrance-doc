@@ -41,10 +41,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/etrangefrance/EtrangeFrance/tree/main/Docs/',
+          // Liens "Éditer cette page" désactivés pour la documentation utilisateur
+          // editUrl: 'https://github.com/...',
         },
         blog: false, // Désactivé pour se concentrer sur la documentation
         theme: {
