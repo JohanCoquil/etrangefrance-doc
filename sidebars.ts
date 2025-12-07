@@ -1,67 +1,91 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
-const sidebars: SidebarsConfig = {
-  docSidebar: [
+const sidebars = {
+  tutorialSidebar: [
     'intro',
+
     {
       type: 'category',
-      label: 'Débuter',
+      label: 'Guide du Joueur',
+      collapsed: false,
       items: [
-        'premiers-pas',
-        'creer-personnage',
-        'gestion-personnages',
+        'joueur/introduction-joueur',
+        'joueur/installation',
+        'joueur/decouverte-interface',
+
+        {
+          type: 'category',
+          label: 'Personnages',
+          items: [
+            'joueur/personnages/overview',
+            'joueur/personnages/creation',
+            'joueur/personnages/caracteristiques',
+            'joueur/personnages/avatar',
+            'joueur/personnages/notes-capacites',
+            'joueur/personnages/synchronisation',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Parties',
+          items: [
+            'joueur/parties/rejoindre',
+            'joueur/parties/interface-joueur',
+            'joueur/parties/tirages-en-partie',
+            'joueur/parties/chat-textuel',
+            'joueur/parties/chat-vocal',
+          ],
+        },
       ],
     },
+
     {
       type: 'category',
-      label: 'Pour les Joueurs',
+      label: 'Guide du MJ',
+      collapsed: false,
       items: [
-        'joueur',
-        'rejoindre-partie',
-        'utiliser-personnage',
-        'partie-en-cours',
-        'cartes-et-tirages',
+        'mj/introduction-mj',
+        'mj/creation-partie',
+        'mj/gestion-joueurs',
+        'mj/interface-mj',
+        'mj/tirages-mj',
+
+        {
+          type: 'category',
+          label: 'Scénarios',
+          items: [
+            'mj/scenarios/overview',
+            'mj/scenarios/consultation-scenario',
+            'mj/scenarios/gestion-documents',
+            'mj/scenarios/envoyer-document',
+          ],
+        },
+
+        'mj/outils-mj',
       ],
     },
+
     {
       type: 'category',
-      label: 'Pour les Maîtres de Jeu',
+      label: 'Système de jeu',
+      collapsed: false,
       items: [
-        'mj',
-        'creer-partie',
-        'gerer-sessions',
-        'animer-session',
-        'outils-mj',
+        'systeme/cartes',
+        'systeme/modes-de-tirage',
+        'systeme/difficulte',
+        'systeme/bonus-capacites',
+        'systeme/probabilites',
       ],
     },
+
     {
       type: 'category',
-      label: 'Fonctionnalités',
+      label: 'Annexes',
+      collapsed: true,
       items: [
-        'chat-temps-reel',
-        'chat-vocal',
-        'synchronisation',
-        'notifications',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Aide & Dépannage',
-      items: [
-        'faq',
-        'problemes-courants',
+        'annexes/faq',
+        'annexes/glossaire',
+        'annexes/changelog',
+        'about',
       ],
     },
   ],
