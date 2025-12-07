@@ -41,6 +41,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: 'docs',  
           // Liens "Éditer cette page" désactivés pour la documentation utilisateur
           // editUrl: 'https://github.com/...',
         },
