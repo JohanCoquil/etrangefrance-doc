@@ -8,29 +8,67 @@
   line-height: 11px;
 
   /* Ambre Minitel */
-  color: #ffbf66;
-  text-shadow:
-    0 0 4px #ffac33,
-    0 0 7px #cc7a00,
-    0 0 14px rgba(255, 180, 90, 0.4);
+  color: var(--ascii-title-color);
+  text-shadow: var(--ascii-title-shadow);
 }
 
 .subtitle {
   text-align: center;
   margin-top: 0;
-  color: #ffe9cc;
+  color: var(--subtitle-color);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .quickLinks {
   padding: 40px 0;
-  background: #1a1a1a;
+  background: var(--quicklinks-bg);
+}
+
+/* Mode clair */
+:root {
+  --quicklinks-bg: #f5f5f5;
+  --section-title-color: #1a1a1a;
+  --card-bg: #fff;
+  --card-border: #e0e0e0;
+  --card-color: #333;
+  --card-hover-bg: #f9f9f9;
+  --card-hover-border: #3578e5;
+  --ascii-title-color: #cc7a00;
+  --ascii-title-shadow: 
+    0 0 4px #b36600,
+    0 0 7px #996600,
+    0 0 14px rgba(204, 122, 0, 0.3);
+  --subtitle-color: #4a4a4a;
+}
+
+/* Mode sombre */
+[data-theme='dark'] {
+  --quicklinks-bg: #1a1a1a;
+  --section-title-color: #fff;
+  --card-bg: #222;
+  --card-border: #333;
+  --card-color: #eee;
+  --card-hover-bg: #333;
+  --card-hover-border: #ffbf66;
+  --ascii-title-color: #ffbf66;
+  --ascii-title-shadow:
+    0 0 4px #ffac33,
+    0 0 7px #cc7a00,
+    0 0 14px rgba(255, 180, 90, 0.4);
+  --subtitle-color: #ffe9cc;
 }
 
 .sectionTitle {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #fff;
+  color: var(--section-title-color);
 }
 
 .cards {
@@ -40,17 +78,17 @@
 }
 
 .card {
-  background: #222;
+  background: var(--card-bg);
   border-radius: 10px;
   padding: 20px;
-  color: #eee;
+  color: var(--card-color);
   text-decoration: none;
-  border: 1px solid #333;
+  border: 1px solid var(--card-border);
   transition: 0.2s ease;
 }
 
 .card:hover {
-  background: #333;
-  border-color: #ffbf66;
+  background: var(--card-hover-bg);
+  border-color: var(--card-hover-border);
   transform: translateY(-3px);
 }
