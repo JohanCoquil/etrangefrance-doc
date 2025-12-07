@@ -1,29 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="#3578e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <title>Pour les Maîtres de Jeu</title>
-  <!-- Personnage MJ au centre -->
-  <circle cx="200" cy="100" r="35" fill="#3578e5"/>
-  <rect x="185" y="135" width="30" height="50" rx="4" fill="#3578e5"/>
-  <rect x="193" y="185" width="6" height="25" rx="2" fill="#3578e5"/>
-  <rect x="201" y="185" width="6" height="25" rx="2" fill="#3578e5"/>
-  
-  <!-- Couronne/chapeau de MJ -->
-  <path d="M 170 85 L 200 70 L 230 85 L 225 95 L 200 90 L 175 95 Z" fill="#fbbf24" opacity="0.9"/>
-  
-  <!-- Tablette/écran de contrôle -->
-  <rect x="140" y="220" width="120" height="60" rx="5" fill="#1e40af" opacity="0.8"/>
-  <rect x="150" y="230" width="100" height="40" rx="3" fill="#60a5fa" opacity="0.3"/>
-  <circle cx="160" cy="245" r="3" fill="#60a5fa"/>
-  <circle cx="175" cy="245" r="3" fill="#60a5fa"/>
-  <circle cx="190" cy="245" r="3" fill="#60a5fa"/>
-  
-  <!-- Icônes d'outils -->
-  <circle cx="100" cy="80" r="15" fill="#4285f4" opacity="0.6"/>
-  <path d="M 100 70 L 100 90 M 90 80 L 110 80" stroke="white" stroke-width="2"/>
-  
-  <circle cx="300" cy="80" r="15" fill="#4285f4" opacity="0.6"/>
-  <rect x="293" y="73" width="14" height="14" rx="2" fill="white" opacity="0.8"/>
-  
-  <!-- Lignes de connexion -->
-  <line x1="100" y1="80" x2="170" y2="100" stroke="#93c5fd" stroke-width="2" opacity="0.4" stroke-dasharray="3,3"/>
-  <line x1="300" y1="80" x2="230" y2="100" stroke="#93c5fd" stroke-width="2" opacity="0.4" stroke-dasharray="3,3"/>
+  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
 </svg>
