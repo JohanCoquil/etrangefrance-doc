@@ -48,6 +48,15 @@ En touchant un personnage, vous accédez à sa feuille complète qui affiche :
 3. Modifiez les informations souhaitées
 4. Sauvegardez vos changements
 
+### Sélectionner un avatar
+
+Pour changer l'avatar de votre personnage :
+1. Dans la feuille du personnage, utilisez l'option pour sélectionner un avatar
+2. **Permission galerie** : la première fois, l'application vous demandera l'autorisation d'accéder à vos photos
+   - Autorisez l'accès pour choisir une image depuis votre galerie
+   - Si vous refusez, une alerte vous expliquera comment activer la permission plus tard
+3. Sélectionnez l'image souhaitée dans votre galerie
+
 ### Dupliquer un personnage
 Pour créer une variante d'un personnage existant :
 1. Sélectionnez le personnage

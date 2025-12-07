@@ -70,10 +70,12 @@ Solutions aux problèmes les plus fréquemment rencontrés.
 
 **Solutions** :
 1. Vérifiez que la **caméra** de votre appareil fonctionne
-2. Assurez-vous que l'**écran du MJ est bien éclairé**
-3. **Maintenez votre appareil stable** et à bonne distance
-4. **Demandez au MJ** d'envoyer le QR Code par email
-5. **Réessayez** dans un endroit mieux éclairé
+2. Vérifiez que la **permission caméra** est bien activée
+   - Si vous avez refusé la permission par erreur, consultez la section [Problèmes de permissions](#-problèmes-de-permissions) pour la réactiver
+3. Assurez-vous que l'**écran du MJ est bien éclairé**
+4. **Maintenez votre appareil stable** et à bonne distance
+5. **Demandez au MJ** d'envoyer le QR Code par email
+6. **Réessayez** dans un endroit mieux éclairé
 
 ### La partie n'apparaît pas
 
@@ -127,6 +129,7 @@ Solutions aux problèmes les plus fréquemment rencontrés.
 **Solutions** :
 1. Vérifiez que votre **micro est activé** (pas en mode muet)
 2. Vérifiez les **permissions microphone** dans les paramètres de l'appareil
+   - Si vous avez refusé la permission par erreur, consultez la section [Problèmes de permissions](#-problèmes-de-permissions) pour la réactiver
 3. Vérifiez que le **chat vocal est activé** par le MJ
 4. **Testez** votre micro avec une autre application
 5. **Réessayez** de rejoindre le chat vocal
@@ -220,8 +223,69 @@ Solutions aux problèmes les plus fréquemment rencontrés.
 1. **Consultez ce guide** : la fonctionnalité est peut-être documentée
 2. **Explorez les onglets** : vérifiez tous les menus
 3. **Vérifiez les permissions** : certaines fonctions nécessitent des permissions
+   - Si une permission manque, consultez la section [Problèmes de permissions](#-problèmes-de-permissions) pour l'activer
 4. **Contactez votre MJ** : il peut vous guider
 5. Certaines fonctions sont **spécifiques aux MJ** : vérifiez que vous avez les droits
+
+## 🔐 Problèmes de permissions
+
+### J'ai refusé une permission par erreur
+
+**Problème** : Vous avez refusé une permission lors de la demande et maintenant la fonctionnalité ne fonctionne pas.
+
+**Solution** : Vous pouvez activer manuellement la permission dans les paramètres Android :
+
+#### Étapes générales
+
+1. Ouvrez les **Paramètres** de votre appareil Android
+2. Allez dans **Applications** (ou **Apps**)
+3. Trouvez et sélectionnez **Étrange France**
+4. Ouvrez **Autorisations** (ou **Permissions**)
+5. Activez la permission correspondante à la fonctionnalité
+
+#### Permissions spécifiques
+
+##### 📷 Permission Caméra
+- Utilisée pour : scanner les QR Codes
+- Dans les autorisations, activez **Caméra**
+- Si nécessaire, réessayez de scanner un QR Code
+
+##### 🎤 Permission Microphone
+- Utilisée pour : le chat vocal
+- Dans les autorisations, activez **Microphone**
+- Si nécessaire, demandez au MJ de redémarrer le chat vocal
+
+##### 🖼️ Permission Galerie/Photos
+- Utilisée pour : sélectionner un avatar ou une image à partager
+- Dans les autorisations, activez **Photos et vidéos** ou **Stockage**
+- Réessayez ensuite de sélectionner une image
+
+##### 🔔 Permission Notifications
+- Utilisée pour : recevoir les alertes de l'application
+- Dans les autorisations, activez **Notifications**
+- Les notifications devraient fonctionner après
+
+#### Après avoir activé la permission
+
+1. **Redémarrez l'application** pour que la permission soit prise en compte
+2. **Réessayez** la fonctionnalité qui nécessitait la permission
+3. Si le problème persiste, **redémarrez votre appareil**
+
+#### Note importante
+
+- Les permissions sont demandées uniquement **quand vous utilisez la fonctionnalité** pour la première fois
+- Si vous refusez une permission, vous pouvez toujours l'activer plus tard dans les paramètres
+- Certaines fonctionnalités nécessitent ces permissions pour fonctionner correctement
+
+### Une fonctionnalité ne fonctionne pas
+
+**Problème** : Une fonctionnalité ne fonctionne pas et vous pensez que c'est lié aux permissions.
+
+**Solutions** :
+1. Vérifiez dans les **paramètres de l'application** si la permission est bien activée
+2. Si la permission est désactivée, **activez-la** (voir ci-dessus)
+3. **Redémarrez l'application** après avoir modifié les permissions
+4. Vérifiez que la fonctionnalité nécessite bien cette permission (consultez les sections dédiées de ce guide)
 
 ## 🔧 Besoin d'aide supplémentaire ?
 

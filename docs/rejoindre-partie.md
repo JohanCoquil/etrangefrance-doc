@@ -15,7 +15,10 @@ Votre maître de jeu peut vous inviter de plusieurs façons :
 2. Utilisez l'application pour **scanner le QR Code**
    - Dans l'onglet **Parties** 🎲
    - Utilisez l'option **"Rejoindre avec QR Code"**
-3. L'application lit automatiquement les informations de la partie
+3. **Permission caméra** : la première fois, l'application vous demandera l'autorisation d'utiliser la caméra
+   - Cliquez sur **"Autoriser la caméra"** pour scanner le QR Code
+   - Cette permission est nécessaire uniquement pour le scan
+4. L'application lit automatiquement les informations de la partie
 
 ### Méthode 2 : Email
 1. Le MJ vous envoie un **email avec le QR Code** en pièce jointe

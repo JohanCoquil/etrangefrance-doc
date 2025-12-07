@@ -14,12 +14,6 @@ Ce guide vous accompagne pour installer et prendre en main l'application Étrang
 2. **Autorisez l'installation** : dans les paramètres Android, autorisez l'installation depuis des sources inconnues
 3. **Installez l'application** : ouvrez le fichier APK et suivez les instructions d'installation
 
-### Première ouverture
-
-À la première ouverture, l'application vous demande :
-- ⚙️ **Permissions** : acceptez les permissions nécessaires (stockage, microphone pour le chat vocal)
-- 👤 **Créer un compte** : créez votre profil utilisateur ou connectez-vous
-
 ## 🏠 Interface principale
 
 L'application se compose de **7 onglets** principaux accessibles en bas de l'écran :
@@ -40,6 +34,17 @@ Maintenant que vous avez installé l'application, découvrez :
 
 1. **[Créer un personnage](/docs/creer-personnage)** - Créez votre premier personnage joueur
 2. **[Rejoindre une partie](/docs/rejoindre-partie)** - Participez à votre première session
+
+## 🔐 Permissions Android
+
+L'application demande certaines permissions **uniquement quand vous utilisez les fonctionnalités correspondantes** :
+
+- 📷 **Caméra** : demandée lors du scan d'un QR Code pour rejoindre une partie
+- 🎤 **Microphone** : demandée lors de l'activation du chat vocal
+- 🖼️ **Galerie** : demandée lors de la sélection d'un avatar ou d'une image à partager
+- 🔔 **Notifications** : demandée lors de l'utilisation des notifications dans une session active
+
+Ces permissions ne sont **pas demandées au démarrage** de l'application, mais seulement quand nécessaire. Vous pouvez les autoriser ou les refuser selon vos préférences, mais certaines fonctionnalités nécessitent ces permissions pour fonctionner.
 
 ## 💡 Astuce
 

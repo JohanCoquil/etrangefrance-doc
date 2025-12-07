@@ -38,9 +38,12 @@ Pour gérer les notifications :
 
 ### Permissions
 
-L'application demande les permissions de notification :
-- **Autorisez** pour recevoir les notifications
-- Vous pouvez modifier dans les **paramètres de l'appareil** si nécessaire
+L'application demande la permission de notifications **lors de l'entrée dans une session active** (au montage du hook de notifications) :
+- **Demande automatique** : l'autorisation est demandée quand vous entrez dans une session active pour la première fois
+- **Autorisez** pour recevoir les notifications pendant les sessions
+- Si vous refusez, les notifications ne fonctionneront pas mais l'application continuera de fonctionner normalement
+- Un avertissement peut s'afficher dans la console si la permission est refusée
+- Vous pouvez modifier les permissions à tout moment dans les **paramètres de l'appareil** si nécessaire
 
 ### Personnalisation
 

@@ -74,9 +74,12 @@ Vous pouvez diffuser des images aux joueurs :
 #### Méthode 2 : Depuis votre appareil
 1. **Cliquez sur "Diffuser une image"**
 2. **Choisissez "Depuis la galerie"**
-3. **Sélectionnez une image**
-4. **Ajoutez une légende** (optionnel)
-5. **Diffusez** : l'image est envoyée à tous les joueurs
+3. **Permission galerie** : la première fois, l'application vous demandera l'autorisation d'accéder à vos photos
+   - Autorisez l'accès pour sélectionner une image depuis votre galerie
+   - Si vous refusez, une alerte vous expliquera comment activer la permission plus tard
+4. **Sélectionnez une image** dans votre galerie
+5. **Ajoutez une légende** (optionnel)
+6. **Diffusez** : l'image est envoyée à tous les joueurs
 
 ### Types d'images à partager
 

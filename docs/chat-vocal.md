@@ -28,7 +28,10 @@ Le chat vocal est **contrôlé par le MJ** :
 
 Quand le MJ active le chat vocal :
 - Vous êtes **automatiquement connecté**
-- Votre **microphone est activé** par défaut
+- **Permission microphone** : la première fois, l'application vous demandera l'autorisation d'utiliser le microphone
+  - Autorisez l'accès pour participer au chat vocal
+  - Si vous refusez, vous recevrez des instructions pour l'activer plus tard dans les paramètres
+- Votre **microphone est activé** par défaut après autorisation
 - Vous pouvez **immédiatement parler**
 
 ## 🎛️ Contrôles
@@ -148,9 +151,11 @@ Pour une meilleure qualité :
 
 ### Permissions
 
-L'application demande les permissions microphone :
+L'application demande la permission microphone **lors de l'initialisation du chat vocal** (quand le MJ l'active pour la première fois) :
+- **Demande automatique** : l'autorisation est demandée au moment de l'activation du chat vocal
 - **Autorisez** pour utiliser le chat vocal
-- Vous pouvez modifier dans les **paramètres de l'appareil** si nécessaire
+- Si vous refusez, une alerte vous indique comment activer la permission plus tard dans les paramètres Android
+- Vous pouvez modifier les permissions à tout moment dans les **paramètres de l'appareil** si nécessaire
 
 ## 🆚 Chat texte vs vocal
 
