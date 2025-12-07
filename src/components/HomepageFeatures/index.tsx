@@ -14,7 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Pour les Joueurs',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/joueurs.svg').default,
     description: (
       <>
         Créez vos personnages, rejoignez des parties et participez à des sessions
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Pour les Maîtres de Jeu',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/maitre-jeu.svg').default,
     description: (
       <>
         Générez des parties, animez vos sessions, partagez des images et utilisez
@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Temps Réel',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/temps-reel.svg').default,
     description: (
       <>
         Chat texte et vocal, synchronisation instantanée, tirages partagés et
