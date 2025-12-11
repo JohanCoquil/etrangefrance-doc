@@ -11,7 +11,7 @@ Elle est fournie directement sous forme de **fichier `.apk`** via le site offici
 
 Ouvrez votre navigateur et rendez-vous à l’adresse suivante :
 
-👉 **https://api.scriptonautes.net**
+👉 **https://etrangefrance.scriptonautes.net**
 
 Vous y trouverez un bouton permettant de télécharger la dernière version de l’application Android.
 
@@ -28,7 +28,7 @@ Une fois le fichier téléchargé :
 1. Ouvrez la **notification de téléchargement**,  
    **ou** allez dans votre application **Fichiers / Téléchargements**.
 2. Appuyez sur le fichier :  
-   **etrange-france.apk**
+   **EtrFra.apk**
 3. Android vous demandera peut-être d’**autoriser l’installation depuis cette source**.
 
 Sélectionnez :
@@ -41,7 +41,7 @@ Puis revenez à l’écran précédent et relancez l’installation.
 ![Capture d’écran – Installation du fichier APK](pathname:///img/joueur-installation-02.png)
 
 > ⚠️ **Sécurité**  
-> Ne téléchargez l’application que depuis le site officiel ou un lien fourni par votre MJ.
+> Ne téléchargez l’application que depuis le site officiel.
 
 ---
 

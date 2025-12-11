@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://api.scriptonautes.net',
+  url: 'https://etrangefrance.scriptonautes.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/doc/',
@@ -73,7 +73,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://api.scriptonautes.net',
+          href: 'https://etrangefrance.scriptonautes.net',
           label: 'Télécharger l\'application',
           position: 'right',
         },
@@ -104,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'Site officiel de l\'application',
-              href: 'https://api.scriptonautes.net',
+              href: 'https://etrangefrance.scriptonautes.net',
             },
 
             {
