@@ -40,14 +40,14 @@ La documentation est déployée automatiquement via GitHub Actions lorsque vous 
 
 Consultez le guide complet : [Guide de déploiement](.github/DEPLOYMENT.md)
 
-**Configuration requise** : Configurez les secrets GitHub (FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_REMOTE_DIR)
+**Configuration requise** : Configurez les secrets GitHub (SFTP_SERVER, SFTP_USERNAME, SFTP_PASSWORD, SFTP_REMOTE_DIR, SFTP_PORT)
 
 ### Déploiement manuel
 
 Pour déployer manuellement la documentation :
 
 1. Build le site : `npm run build`
-2. Déployez le contenu du dossier `build/` sur votre hébergeur via FTP
+2. Déployez le contenu du dossier `build/` sur votre hébergeur via SFTP
 
 ### Déploiement GitHub Pages (alternative)
 

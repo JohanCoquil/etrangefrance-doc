@@ -6,35 +6,43 @@ Ce fichier sert de référence pour configurer les secrets nécessaires au dépl
 
 Voici les secrets que vous devez ajouter dans les paramètres de votre dépôt GitHub :
 
-### `FTP_SERVER` (requis)
-L'adresse de votre serveur FTP (sans le protocole).
+### `SFTP_SERVER` (requis)
+L'adresse de votre serveur SFTP (sans le protocole).
 
 **Exemple :**
 ```
-ftp.monhebergeur.com
+sftp.monhebergeur.com
 ```
 ou
 ```
 monhebergeur.com
 ```
 
-### `FTP_USERNAME` (requis)
-Votre nom d'utilisateur FTP.
+### `SFTP_USERNAME` (requis)
+Votre nom d'utilisateur SFTP.
 
 **Exemple :**
 ```
 monnom
 ```
 
-### `FTP_PASSWORD` (requis)
-Votre mot de passe FTP.
+### `SFTP_PASSWORD` (requis)
+Votre mot de passe SFTP.
 
 **Exemple :**
 ```
 monMotDePasseSecret123
 ```
 
-### `FTP_REMOTE_DIR` (optionnel)
+### `SFTP_PORT` (optionnel)
+Le port SFTP. Par défaut, utilise le port 22.
+
+**Exemple :**
+```
+22
+```
+
+### `SFTP_REMOTE_DIR` (optionnel)
 Le dossier distant où déployer la documentation. Par défaut, utilise la racine `/`.
 
 **Exemples :**
@@ -78,4 +86,3 @@ Pour vérifier que vos secrets sont bien configurés :
 ## 📚 Plus d'informations
 
 Consultez le [Guide de déploiement complet](DEPLOYMENT.md) pour plus de détails.
-

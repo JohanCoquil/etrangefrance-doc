@@ -1,4 +1,4 @@
-name: Deploy to FTP
+name: Deploy to SFTP
 
 on:
   push:
@@ -52,24 +52,18 @@ jobs:
           echo "📊 Taille du build:"
           du -sh build/ || echo "⚠️ Impossible de calculer la taille"
 
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy to SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build/
-          server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }}
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.DS_Store
-          dangerous-clean-slate: false
-          log-level: verbose
+          server: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: ${{ secrets.SFTP_PORT || '22' }}
+          local_path: './build/*'
+          remote_path: ${{ secrets.SFTP_REMOTE_DIR || '/' }}
+          sftpArgs: '-o ConnectTimeout=5'
 
       - name: Deployment complete
         run: |
           echo "✅ Site déployé avec succès!"
           echo "🌐 Votre documentation est maintenant disponible en ligne"
-
