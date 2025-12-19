@@ -47,6 +47,27 @@
   --subtitle-color: #4a4a4a;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    font-size: 0.45rem; /* ajuste si besoin */
+    line-height: 1.1;
+  }
+}
+
+
 /* Mode sombre */
 [data-theme='dark'] {
   --quicklinks-bg: #1a1a1a;
